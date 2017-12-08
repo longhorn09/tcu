@@ -60,3 +60,4 @@ values('IR','Indooroopilly Ruby',15.92,56147,0.5,20,'AUS');
 insert into stock(stkcode,stkfirm,stkprice,stkqty,stkdiv,stkpe,natcode)
 values('BD','Bombay Duck',25.55,167382,1,12,'IND');
 
+
