@@ -1,9 +1,10 @@
 create database NationStock;
 use NationStock;
 
-create table nation(natcode varchar(3),
-natname varchar(20),
-exchrate float
+CREATE TABLE nation (
+    natcode VARCHAR(3) NOT NULL PRIMARY KEY,
+    natname VARCHAR(20),
+    exchrate FLOAT
 );
 
 insert into nation (natcode,natname,exchrate)
@@ -17,14 +18,18 @@ values('IND','India',0.0228);
 insert into nation (natcode,natname,exchrate)
 values('JPN','Japan',132.09);
 
+CREATE TABLE stock (
+    stkcode VARCHAR(3),
+    stkfirm VARCHAR(30),
+    stkprice FLOAT,
+    stkqty LONG,
+    stkdiv FLOAT,
+    stkpe INTEGER,
+    natcode VARCHAR(3),
+    FOREIGN KEY (natcode)
+        REFERENCES nation (natcode)
+);
 
-create table stock(stkcode varchar(3),
-stkfirm varchar(30),
-stkprice float,
-stkqty long,
-stkdiv float,
-stkpe integer,
-natcode varchar(3));
 
 
 insert into stock(stkcode,stkfirm,stkprice,stkqty,stkdiv,stkpe,natcode)
@@ -59,5 +64,3 @@ insert into stock(stkcode,stkfirm,stkprice,stkqty,stkdiv,stkpe,natcode)
 values('IR','Indooroopilly Ruby',15.92,56147,0.5,20,'AUS');
 insert into stock(stkcode,stkfirm,stkprice,stkqty,stkdiv,stkpe,natcode)
 values('BD','Bombay Duck',25.55,167382,1,12,'IND');
-
-
