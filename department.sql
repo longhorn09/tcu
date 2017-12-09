@@ -111,3 +111,17 @@ INSERT INTO QITEM(itemname,itemtype,itemcolor)
 VALUES('My Little Pony','toy','white');
 INSERT INTO QITEM(itemname,itemtype,itemcolor)
 VALUES('He-man','toy','white');
+
+
+SET FOREIGN_KEY_CHECKS = 0; # temporarily disable foreign-key checks
+
+insert into QDEPT(deptname,deptfloor,deptphone,empno)
+values('Furniture',1,'972-111-2222',1);
+insert into QDEPT(deptname,deptfloor,deptphone,empno)
+values('Toys',2,'972-333-4444',2);
+insert into QDEPT(deptname,deptfloor,deptphone,empno)
+values('Womens',3,'972-333-4444',3);
+insert into QDEPT(deptname,deptfloor,deptphone,empno)
+values('Shoes',4,'972-333-4444',4);
+
+SET FOREIGN_KEY_CHECKS = 1; # re-enable foreign key checks
