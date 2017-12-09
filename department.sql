@@ -57,7 +57,7 @@ create table QSALE(
 );
 
 
-
+# populate the QSPL table with values
 INSERT INTO QSPL(splname)
 VALUES('Nike');
 INSERT INTO QSPL(splname)
@@ -76,7 +76,14 @@ INSERT INTO QSPL(splname)
 VALUES('Kate Spade');
 INSERT INTO QSPL(splname)
 VALUES('Gucci');
-
+insert into QSPL(splname)
+values('Banana Republic');
+insert into QSPL(splname)
+values('Old Navy');
+insert into QSPL(splname)
+values('Hasbro');
+insert into QSPL(splname)
+values('Mattel');
 
 INSERT INTO QITEM(itemname,itemtype,itemcolor)
 VALUES('Air Force Ones','sneakers','red');
@@ -92,6 +99,12 @@ INSERT INTO QITEM(itemname,itemtype,itemcolor)
 VALUES('chair','furniture','white');
 INSERT INTO QITEM(itemname,itemtype,itemcolor)
 VALUES('chaise','furniture','white');
+INSERT INTO QITEM(itemname,itemtype,itemcolor)
+VALUES('stool','furniture','black');
+INSERT INTO QITEM(itemname,itemtype,itemcolor)
+VALUES('bench','furniture','brown');
+INSERT INTO QITEM(itemname,itemtype,itemcolor)
+VALUES('desk','furniture','white');
 
 INSERT INTO QITEM(itemname,itemtype,itemcolor)
 VALUES('blouse','bottoms','white');
@@ -190,3 +203,73 @@ insert into QEMP(empfname, empsalary,deptname,bossno)
 values('Chantelle',58000,'Toys',2);
 insert into QEMP(empfname, empsalary,deptname,bossno)
 values('Corey',29000,'Toys',2);
+
+
+# loading QSALE table values
+insert into QSALE(saleqty,deptname,itemname)
+values(3,'Toys','GI Joe');
+insert into QSALE(saleqty,deptname,itemname)
+values(10,'Toys','He-man');
+insert into QSALE(saleqty,deptname,itemname)
+values(12,'Shoes','Jordan I');
+insert into QSALE(saleqty,deptname,itemname)
+values(40,'Shoes','Jordan XII');
+insert into QSALE(saleqty,deptname,itemname)
+values(1,'Furniture','desk');
+insert into QSALE(saleqty,deptname,itemname)
+values(13,'Furniture','stool');
+insert into QSALE(saleqty,deptname,itemname)
+values(31,'Furniture','chair');
+insert into QSALE(saleqty,deptname,itemname)
+values(36,'Furniture','chaise');
+insert into QSALE(saleqty,deptname,itemname)
+values(59,'Womens','dress');
+insert into QSALE(saleqty,deptname,itemname)
+values(61,'Womens','blouse');
+insert into QSALE(saleqty,deptname,itemname)
+values(65,'Womens','skirt');
+insert into QSALE(saleqty,deptname,itemname)
+values(45,'Womens','skirt');
+insert into QSALE(saleqty,deptname,itemname)
+values(49,'Womens','skirt');
+insert into QSALE(saleqty,deptname,itemname)
+values(28,'Shoes','Jordan XII');
+insert into QSALE(saleqty,deptname,itemname)
+values(6,'Shoes','Jordan XII');
+insert into QSALE(saleqty,deptname,itemname)
+values(9,'Shoes','Jordan XII');
+
+
+# loading QDEL table VALUES
+insert into QDEL(delqty,itemname,deptname,splno)
+values(2,'skirt','Womens',9);
+insert into QDEL(delqty,itemname,deptname,splno)
+values(2,'blouse','Womens',9)  ;
+insert into QDEL(delqty,itemname,deptname,splno)
+values(2,'dress','Womens',11)  ;
+insert into QDEL(delqty,itemname,deptname,splno)
+values(21,'blouse','Womens',10)  ;
+insert into QDEL(delqty,itemname,deptname,splno)
+values(22,'blouse','Womens',11);
+insert into QDEL(delqty,itemname,deptname,splno)
+values(22,'bench','Furniture',6);
+insert into QDEL(delqty,itemname,deptname,splno)
+values(22,'desk','Furniture',4);
+insert into QDEL(delqty,itemname,deptname,splno)
+values(2,'chaise','Furniture',4);
+insert into QDEL(delqty,itemname,deptname,splno)
+values(23,'chair','Furniture',6);
+insert into QDEL(delqty,itemname,deptname,splno)
+values(25,'bench','Furniture',5);
+insert into QDEL(delqty,itemname,deptname,splno)
+values(82,'desk','Furniture',6);
+
+insert into QDEL(delqty,itemname,deptname,splno)
+values(32,'Transformers','Toys',12);
+insert into QDEL(delqty,itemname,deptname,splno)
+values(32,'Lego','Toys',13);
+
+insert into QDEL(delqty,itemname,deptname,splno)
+values(62,'My Little Pony','Toys',13);
+insert into QDEL(delqty,itemname,deptname,splno)
+values(63,'He-man','Toys',13);
