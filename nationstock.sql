@@ -22,7 +22,7 @@ CREATE TABLE stock (
     stkcode VARCHAR(3),
     stkfirm VARCHAR(30),
     stkprice FLOAT,
-    stkqty LONG,
+    stkqty BIGINT,
     stkdiv FLOAT,
     stkpe INTEGER,
     natcode VARCHAR(3),
