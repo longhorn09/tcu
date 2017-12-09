@@ -125,3 +125,68 @@ insert into QDEPT(deptname,deptfloor,deptphone,empno)
 values('Shoes',4,'972-333-4444',4);
 
 SET FOREIGN_KEY_CHECKS = 1; # re-enable foreign key checks
+
+# bosses
+insert into QEMP(empfname, empsalary,deptname,bossno)
+values('John',85000,'Furniture',1);
+insert into QEMP(empfname, empsalary,deptname,bossno)
+values('Raphael',84500,'Toys',2);
+insert into QEMP(empfname, empsalary,deptname,bossno)
+values('Hilary',86500,'Womens',3);
+insert into QEMP(empfname, empsalary,deptname,bossno)
+values('Michael',87000,'Shoes',4);
+
+
+# regular employees of furniture dept
+insert into QEMP(empfname, empsalary,deptname,bossno)
+values('Jacob',55000,'Furniture',1);
+insert into QEMP(empfname, empsalary,deptname,bossno)
+values('Sal',56000,'Furniture',1);
+insert into QEMP(empfname, empsalary,deptname,bossno)
+values('Neil',61000,'Furniture',1);
+insert into QEMP(empfname, empsalary,deptname,bossno)
+values('Larry',45000,'Furniture',5);
+insert into QEMP(empfname, empsalary,deptname,bossno)
+values('Tom',31000,'Furniture',5);
+
+#   employees of shoes dept
+insert into QEMP(empfname, empsalary,deptname,bossno)
+values('David',55000,'Shoes',4);
+insert into QEMP(empfname, empsalary,deptname,bossno)
+values('Darren',56000,'Shoes',4);
+insert into QEMP(empfname, empsalary,deptname,bossno)
+values('Doyle',61000,'Shoes',4);
+insert into QEMP(empfname, empsalary,deptname,bossno)
+values('Danny',45000,'Shoes',4);
+insert into QEMP(empfname, empsalary,deptname,bossno)
+values('Donnie',31000,'Shoes',4);
+
+
+#   employees of womens dept
+insert into QEMP(empfname, empsalary,deptname,bossno)
+values('Mary',55000,'Womens',3);
+insert into QEMP(empfname, empsalary,deptname,bossno)
+values('Meredith',56000,'Womens',3);
+insert into QEMP(empfname, empsalary,deptname,bossno)
+values('Molly',61000,'Womens',3);
+insert into QEMP(empfname, empsalary,deptname,bossno)
+values('Monique',45000,'Womens',3);
+insert into QEMP(empfname, empsalary,deptname,bossno)
+values('Marissa',31000,'Womens',3);
+insert into QEMP(empfname, empsalary,deptname,bossno)
+values('Mystique',31000,'Womens',3);
+
+
+#  employees of shoes dept
+insert into QEMP(empfname, empsalary,deptname,bossno)
+values('Chris',55000,'Toys',2);
+insert into QEMP(empfname, empsalary,deptname,bossno)
+values('Crystal',45000,'Toys',2);
+insert into QEMP(empfname, empsalary,deptname,bossno)
+values('Connor',65000,'Toys',2);
+insert into QEMP(empfname, empsalary,deptname,bossno)
+values('Coloumb',58000,'Toys',2);
+insert into QEMP(empfname, empsalary,deptname,bossno)
+values('Chantelle',58000,'Toys',2);
+insert into QEMP(empfname, empsalary,deptname,bossno)
+values('Corey',29000,'Toys',2);
